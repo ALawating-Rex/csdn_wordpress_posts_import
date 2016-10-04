@@ -14,8 +14,8 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 sys.setrecursionlimit(2000)
 
-wp_url = "http://127.0.0.1/myaliyun/share345/trunk/share345/wp-json/wp/v2/posts"
-wp_url_tags = "http://127.0.0.1/myaliyun/share345/trunk/share345/wp-json/wp/v2/tags"
+wp_url = "http://127.0.0.1/wp-json/wp/v2/posts"
+wp_url_tags = "http://127.0.0.1/wp-json/wp/v2/tags"
 username = "simael"
 password = "123456"
 # ready_cate_id = "4"
@@ -40,7 +40,7 @@ root_url = 'http://blog.csdn.net'
 # var = 'this is a var in'
 # print(Crawl_helper_tools_url.testfunction(var))
 
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0','Referer' : 'http:www.baidu.com'}
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0','Referer' : 'http:www.share345.com'}
 
 crawl_url = Crawl_helper_tools_url(url,root_url)
 html = crawl_url.getCurl(url,{},headers)
